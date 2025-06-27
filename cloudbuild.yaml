@@ -6,7 +6,7 @@ steps:
     args: ['build', '-t', 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest:latest']
+    args: ['push', 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest']
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'gcloud'
@@ -15,7 +15,7 @@ steps:
       - 'deploy'
       - 'faballey-sub'
       - '--image'
-      - 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest:latest'
+      - 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest'
       - '--region'
       - 'us-central1'
       - '--platform'
