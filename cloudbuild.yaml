@@ -13,7 +13,7 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - 'faballey-sub'
+      - 'faballey-sub1'
       - '--image'
       - 'us-central1-docker.pkg.dev/ramakk-gcp/faballey-sub-domain/faballey-sub-domain:latest'
       - '--region'
